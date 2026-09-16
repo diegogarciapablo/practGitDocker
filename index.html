@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muro de aportes — Introducción a GitHub y Docker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <p class="encabezado__curso">Introducción a GitHub y Docker</p>
+      <h1>Muro de aportes</h1>
+      <p class="encabezado__texto">
+        Cada tarjeta de esta página fue agregada por un estudiante distinto, en su propia
+        rama y con su propio commit. Agregá la tuya siguiendo las instrucciones del README.
+      </p>
+      <p class="contador"><span id="total">0</span> aportes publicados</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="muro" aria-label="Aportes de los estudiantes">
+
+      <!-- ================================================================
+           EJEMPLO DEL DOCENTE — no lo borres, sirve de modelo
+           ================================================================ -->
+      <article class="aporte aporte--docente">
+        <h2 class="aporte__nombre">Diego</h2>
+        <p class="aporte__rol">Docente del curso</p>
+        <p class="aporte__mensaje">
+          Un repositorio se entiende cuando uno lo rompe y lo vuelve a armar.
+          Equivocarse acá no cuesta nada.
+        </p>
+        <p class="aporte__usuario">@usuario-docente</p>
+      </article>
+
+      <!-- ================================================================
+           COPIÁ EL BLOQUE DE ABAJO, PEGALO ANTES DEL COMENTARIO FINAL
+           Y CAMBIÁ SOLO EL TEXTO. NO BORRES LOS APORTES DE TUS COMPAÑEROS.
+
+      <article class="aporte">
+        <h2 class="aporte__nombre">Nombre y apellido</h2>
+        <p class="aporte__rol">Ingeniería Comercial, 5.º semestre</p>
+        <p class="aporte__mensaje">
+          Una o dos líneas: por qué te interesa el curso, qué querés aprender,
+          o algo que descubriste esta semana.
+        </p>
+        <p class="aporte__usuario">@tu-usuario-github</p>
+      </article>
+
+           ================================================================ -->
+
+      <article class="aporte">
+        <h2 class="aporte__nombre">Ana Gutiérrez</h2>
+        <p class="aporte__rol">Ingeniería Comercial, 5.º semestre</p>
+        <p class="aporte__mensaje">
+          Vine por la nota y me quedé por los commits. Todavía le tengo miedo al
+          <code>git push</code>, pero cada vez menos.
+        </p>
+        <p class="aporte__usuario">@anagtz</p>
+      </article>
+
+      <article class="aporte">
+        <h2 class="aporte__nombre">Marcos Villa</h2>
+        <p class="aporte__rol">Ingeniería Comercial, 6.º semestre</p>
+        <p class="aporte__mensaje">
+          Quiero aprender Docker para dejar de escuchar «en mi máquina funciona»
+          en los trabajos de grupo.
+        </p>
+        <p class="aporte__usuario">@mvilla</p>
+      </article>
+
+      <!-- FIN DE LOS APORTES — pegá tu tarjeta arriba de esta línea -->
+
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>
+      Carrera de Ingeniería Comercial · UAJMS, Sede Yacuiba
+    </p>
+    <p class="pie__nota">
+      Página servida desde un contenedor Docker. Si la estás viendo, el build salió bien.
+    </p>
+  </footer>
+
+  <script>
+    // Cuenta las tarjetas publicadas para que el número del encabezado
+    // se actualice solo cada vez que alguien agrega la suya.
+    document.getElementById('total').textContent =
+      document.querySelectorAll('.aporte').length;
+  </script>
+
+</body>
+</html>
